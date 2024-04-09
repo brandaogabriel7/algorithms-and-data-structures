@@ -12,7 +12,7 @@ def binary_search(list, target):
 
         if list[middle] == target:
             return middle
-        elif list[middle] < target:
+        if list[middle] < target:
             first = middle + 1
         else:
             last = middle - 1
